@@ -9,6 +9,9 @@ spec:
     project: expense
     module: backend
     environment: dev
+    containers:
+      - name: nginx
+        image: nginx
   ports:
   - name: nginx-svc-port
     protocol: TCP
